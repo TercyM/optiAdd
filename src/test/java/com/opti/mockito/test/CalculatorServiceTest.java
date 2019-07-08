@@ -53,7 +53,7 @@ public class CalculatorServiceTest extends TestCase {
 			int sum = addService.getSum(num1,num2);		
 			
 			//THEN
-			//verify(addRepo, times(1)).retrieveSum(num1,num2);
+			verify(addRepo, times(1)).retrieveSum(num1,num2);
 			assertEquals(mockSum, sum);	
 		} catch (Exception e) {
 			fail();
